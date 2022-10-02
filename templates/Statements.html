@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title>Conditional Statements</title>
+</head>
+<body>
+    <center>
+        <!--
+        <h1> If Statements</h1>
+        {% if a > 1%}
+            <h1> I am in if Condition </h1>
+            <h2>{{a}}</h2>
+        {% endif %}
+        --> 
+        
+        <!--
+        <h1> If-else Statements </h1>
+        {% if a > b %}
+            <h1> a is greater than b </h1>
+            <h2>{{a}}</h2>
+        {% else %}
+            <h1> b is greater than a </h1>
+            <h2>{{b}}</h2>
+        {% endif %}
+        --> 
+
+        <!--  
+        <h1> If-elif-else Statements </h1>
+        {% if a > b %}
+            <h1> a is greater than b </h1>
+            <h2>{{a}}</h2>
+        {% elif b > a %}
+            <h1> b is greater than a </h1>
+            <h2>{{b}}</h2>
+        {% else %}
+            <h1> a and b are equal </h1>
+        {% endif %}
+        -->
+
+        <h1>Nested-if Statements </h1>
+        {% if a > b %}
+            {% if a > c %}
+                <h1> a is maximum </h1>
+                <h2>{{a}}</h2>
+            {% else %}
+                <h1> c is maximum </h1>
+            {% endif %}
+        {% else %}
+            {% if b > c %}
+                <h1> b is maximum </h1>
+                <h2>{{b}}</h2>
+            {% else %}
+                <h1> c is maximum </h1>
+                <h2>{{c}}</h2>
+            {% endif %}
+        {% endif %}
+        
+        
+    </center>
+    
+</body>
+</html>
